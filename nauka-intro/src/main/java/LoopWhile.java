@@ -1,8 +1,10 @@
-public class LoopFor {
+public class LoopWhile {
     public static int sumNumbers(int[] numbers) {
         int sum = 0;
-        for (int i = 0; i < numbers.length; i++) {
+        int i = 0;
+        while (i < numbers.length) {
             sum = sum + numbers[i];
+            i++;
         }
         return sum;
     }
