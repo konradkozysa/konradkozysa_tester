@@ -2,10 +2,12 @@ public class Notebook {
     int weight;
     int price;
     int year;
-    public Notebook(int weight, int price, int year) {
+    String brand;
+    public Notebook(String brand, int weight, int price, int year) {
         this.weight = weight;
         this.price = price;
         this.year = year;
+        this.brand = brand;
     }
 
     public void checkPrice() {

@@ -5,6 +5,7 @@ public class User {
     private String nazwisko;
     private int wiek;
     private String[] users;
+    private int tableSize;
 
     public User() {
         this.imie = imie;
@@ -12,9 +13,12 @@ public class User {
         this.wiek = wiek;
     }
 
-    public Users() {
+    public User(String[] users) {
         this.users = new String[5];
+        this.tableSize = 0;
     }
+
+    
 
     public void imieIn() {
         Scanner scanner = new Scanner(System.in);
